@@ -1,25 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React from 'react';
+import Home from './pages/Home';
+// import {
+// 	createBrowserRouter,
+// 	Route,
+// 	RouterProvider,
+// } from "react-router-dom";
+// import About from './pages/About';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+	// const router = createBrowserRouter([
+	// 	{
+	// 		path: "/",
+	// 		element: <Home />,
+	// 	},
+	// 	{
+	// 		path: "/about",
+	// 		element: <About />,
+	// 	},
+	// ]);
+	// const Dark = {
+	// 	color: "white",
+	// 	backgroundColor: "#212121"
+	// }
+	// const light = {
+	// 	color: "#212121",
+	// 	backgroundColor: "white"
+	// }
+
+	// const toggleTheme = () => {
+	// 	if (Theme.color === "white") {
+	// 		setMyStyle(light)
+	// 		setBtn("btn-dark")
+	// 		document.body.style.backgroundColor = "white";
+
+	// 	}
+	// 	else {
+	// 		setMyStyle(Dark);
+	// 		setBtn("btn-light")
+	// 		document.body.style.backgroundColor = "#212121";
+	// 	}
+	// }
+	// const [Theme, setMyStyle] = useState(light)
+	// const [Btn, setBtn] = useState("btn-dark")
+
+	return (
+		<>
+		<Home/>
+			{/* <RouterProvider router={router} /> */}
+		</>
+	);
 }
 
 export default App;
